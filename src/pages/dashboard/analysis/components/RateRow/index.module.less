@@ -1,0 +1,43 @@
+.rate-row {
+  .top10 {
+    width: 384px;
+
+    &-list {
+      list-style: none;
+      margin-top: 10px;
+      padding: 0;
+
+      li {
+        cursor: pointer;
+        &:hover {
+          color: rgba(0, 0, 0, 0.45);
+        }
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          .top10-item {
+            & > label {
+              border-radius: 20px;
+              color: #fff;
+              background-color: black;
+            }
+          }
+        }
+      }
+    }
+
+    &-item {
+      & > label {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+      }
+      display: flex;
+      align-items: center;
+      padding: 8px;
+      border-bottom: 1px solid #eee;
+    }
+  }
+}

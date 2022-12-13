@@ -1,0 +1,25 @@
+.fast-time-picker {
+  display: flex;
+  align-items: center;
+  &-options {
+    margin-right: 8px;
+    &_item {
+      color: rgba(0, 0, 0, 0.85);
+      font-size: 14px;
+      font-weight: normal;
+      cursor: pointer;
+
+      &&-actived {
+        color: #1890ff;
+      }
+
+      &:hover {
+        color: #1890ff;
+      }
+
+      & + & {
+        margin-left: 5px;
+      }
+    }
+  }
+}
